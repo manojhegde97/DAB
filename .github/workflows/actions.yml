@@ -27,9 +27,6 @@ jobs:
   deploy:
     name: "Deploy bundle"
     runs-on: ubuntu-latest
-    needs:
-      - test_package
-
     steps:
       - uses: actions/checkout@v3
 
