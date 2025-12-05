@@ -22,12 +22,12 @@ targets:
     mode: dev
     default: true
     workspace:
-      host: https://dbc-3247cc85-ef1e.cloud.databricks.com
+      host: dbc-9c96a8d9-cd2b.cloud.databricks.com
 
   prod:
     mode: production
     workspace:
-      host: https://dbc-3247cc85-ef1e.cloud.databricks.com
+      host: dbc-9c96a8d9-cd2b.cloud.databricks.com
       # We explicitly deploy to /Workspace/Users/manojrh@decisionminds.com to make sure we only have a single copy.
       root_path: /Workspace/Users/manojrh@decisionminds.com/.bundle/${bundle.name}/${bundle.target}
     permissions:
