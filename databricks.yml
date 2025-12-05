@@ -23,6 +23,9 @@ targets:
     default: true
     workspace:
       host: dbc-9c96a8d9-cd2b.cloud.databricks.com
+    permissions:
+      - user_name: manojhegde97@gmail.com
+        level: CAN_MANAGE
 
   prod:
     mode: production
