@@ -1,0 +1,15 @@
+# The main pipeline for mybundle
+resources:
+  pipelines:
+    mybundle_pipeline:
+      name: mybundle_pipeline
+      ## Catalog is required for serverless compute
+      catalog: main
+      schema: mybundle_${bundle.target}
+      serverless: true
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+
+      configuration:
+        bundle.sourcePath: ${workspace.file_path}/src
