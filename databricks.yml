@@ -4,11 +4,6 @@ bundle:
   name: mybundle
   uuid: 3bf64c92-4ce3-4d20-9589-30e28af369bf
 
-artifacts:
-  python_artifact:
-    type: whl
-    build: uv build --wheel
-
 include:
   - resources/*.yml
   - resources/*/*.yml
@@ -32,7 +27,7 @@ targets:
   prod:
     mode: production
     workspace:
-      host: dbc-9c96a8d9-cd2b.cloud.databricks.com
+      host: dbc-3247cc85-ef1e.cloud.databricks.com
       # We explicitly deploy to /Workspace/Users/manojrh@decisionminds.com to make sure we only have a single copy.
       root_path: /Workspace/Users/manojrh@decisionminds.com/.bundle/${bundle.name}/${bundle.target}
     permissions:
