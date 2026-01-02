@@ -2,7 +2,7 @@
 resources:
   pipelines:
     mybundle_pipeline:
-      name: mybundle_pipeline
+      name: mybundle_pipeline_updated
       ## Catalog is required for serverless compute
       catalog: main
       schema: mybundle_${bundle.target}
